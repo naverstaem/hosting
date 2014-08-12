@@ -208,6 +208,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/icons-sdbe352a8c1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1922,
+		"inputAbbreviatedPath": "\/img\/icons-sdbe352a8c1.png",
+		"outputAbbreviatedPath": "\/img\/icons-sdbe352a8c1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/account-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -226,17 +237,6 @@
 		"initialSize": 2855,
 		"inputAbbreviatedPath": "\/img\/icons\/answ-a.png",
 		"outputAbbreviatedPath": "\/img\/icons\/answ-a.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/icons\/answ.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2922,
-		"inputAbbreviatedPath": "\/img\/icons\/answ.png",
-		"outputAbbreviatedPath": "\/img\/icons\/answ.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -270,17 +270,6 @@
 		"initialSize": 2965,
 		"inputAbbreviatedPath": "\/img\/icons\/d-parking.png",
 		"outputAbbreviatedPath": "\/img\/icons\/d-parking.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/icons\/d-reg-a.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2976,
-		"inputAbbreviatedPath": "\/img\/icons\/d-reg-a.png",
-		"outputAbbreviatedPath": "\/img\/icons\/d-reg-a.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -784,7 +773,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Roman Leonenko",
+"lastSavedByUser": "Roma&Masha",
 "manualImportLinks": {
 	},
 "projectAttributes": {

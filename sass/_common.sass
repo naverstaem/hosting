@@ -180,6 +180,60 @@ body
   +box-shadow(0 1px 4px rgba(0,0,0,.15))
   text-align: center
 
+  .nav
+    position: relative
+    bottom: -20px
+    margin-bottom: -10px
+    display: inline-block
+
+    ul
+      +clr
+
+      li
+        float: left
+        margin: 0 5px
+
+        a
+          color: #999cc4
+          background: #353967
+          display: inline-block
+          font-size: 16px
+          +creg
+          text-decoration: none
+          text-transform: uppercase
+          padding: 10px 30px
+          +border-top-radius(3px)
+        
+        &.is-active
+          a
+            color: #fff
+
+            .answ-icon
+              +s(answ-a)
+              top: 1px
+
+            .reg-icon
+              +s(d-reg-a)
+              top: 1px
+
+
+    .icon
+      margin-right: 10px
+
+      &.reg-icon
+        +s(d-reg)
+        top: 1px
+
+      &.parking-icon
+        +s(d-parking)
+
+      &.answ-icon
+        +s(answ)
+
+
+
+
+
 // Purple pattern end
 
 .history
@@ -575,6 +629,7 @@ body
     text-transform: uppercase
 
   .breadcrumbs
+    margin-top: 5px
     ul
       +clr
       display: inline-block
@@ -637,6 +692,10 @@ body
       &.l-title
         span
           +clight
+
+  .b-title
+    &:first-child
+      margin-top: 0
 
   &.contacts
     text-align: center
@@ -725,9 +784,7 @@ body
     .container__in
       padding: 80px 10% 20px
 
-    .b-title
-      &:first-child
-        margin-top: 0
+
 
     .datastorage__items
       +clr
@@ -812,3 +869,23 @@ body
           right: 0
           left: -10px
           padding-top: 50px
+
+  &.domains_faq
+    .faq__items
+      color: #000000
+
+      h3
+        font-size: 18px
+        line-height: 1
+        color: #373737
+        +cbold
+        margin-bottom: 30px
+
+      p
+        color: #8b8b8b
+        font-size: 17px
+        +creg
+        margin-bottom: 20px
+
+    .faq__item
+      margin-bottom: 40px
