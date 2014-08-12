@@ -1,0 +1,563 @@
++font('calibrilight', 'calibri-webfont')
++font('calibriregular', 'calibri-webfont')
++font('calibribold', 'calibrib-webfont')
++font("calibriitalic", "calibrii-webfont")
++font("calibrilight_italic", "calibrili-webfont")
++font("calibribold_italic", "calibriz-webfont")
+
+=clight
+  font-family: "calibrilight"
+  font-weight: normal
+  font-style: normal
+
+=creg
+  font-family: "calibriregular"
+  font-weight: normal
+  font-style: normal
+
+=cbold
+  font-family: "calibribold"
+  font-weight: normal
+  font-style: normal
+
+=citalic
+  font-family: "calibriitalic"
+  font-weight: normal
+  font-style: normal
+
+=clitalic
+  font-family: "calibrilight_italic"
+  font-weight: normal
+  font-style: normal
+
+=cbitalic
+  font-family: "calibribold_italic"
+  font-weight: normal
+  font-style: normal
+
+body
+  font-family: Arial, sans-serif
+  font-size: 14px
+  line-height: 1.4
+  background-color: #272A3F
+  color: #ffffff
+  +clr
+
+%in
+  max-width: 1200px
+  min-width: 1020px
+  margin-left: auto
+  margin-right: auto
+  padding: 0 15px
+
+.icon
+  display: inline-block
+  position: relative
+
+.btn
+  display: inline-block
+  +border-radius(4px)
+  text-decoration: none
+  padding: 10px 20px
+  +transition(background, .5s)
+
+.header__in
+  @extend %in
+  +clr
+
+  .top-line
+    +clr
+    // @extend .row
+    padding-top: 17px
+
+    a
+      +cbold
+      color: #fff
+      font-size: 16px
+      text-decoration: none
+
+      .icon
+        margin-right: 7px
+
+      .tel-icon
+        +s(tel-icon)
+        top: 3px
+
+      .support-icon
+        +s(support-icon)
+        top: 4px
+
+      .consult-icon
+        +s(consult-icon)
+
+    .contacts
+      float: left
+
+      > a
+        margin-right: 30px
+
+    .lang
+      float: right
+
+      .lang_check
+        .icon
+          +s(lang-arrow)
+          top: -2px
+
+  .headerb
+    background-color: #fff
+    margin-top: 15px
+    padding: 18px 30px 26px
+    +clr
+    position: relative
+
+    .logo
+      color: #373737
+      font-family: "Open Sans", sans-serif
+      font-size: 22px
+      font-weight: bold
+      font-style: italic
+      text-transform: uppercase
+      text-decoration: none
+      margin-top: 5px
+      position: absolute
+      top: 18px
+      left: 30px
+
+    .nav
+      margin-top: 11px
+      margin-left: auto
+      margin-right: auto
+      display: table
+      width: 74%
+
+      ul
+        +clr
+        display: table-row
+        width: 100%
+
+        li
+          margin-left: 20px
+          height: 21px
+          display: table-cell
+          width: auto
+
+          a
+            color: #8b8b8b
+            +creg
+            font-size: 15px
+            text-decoration: none
+            text-transform: uppercase
+
+          &.is-active
+            a
+              +cbold
+
+    .account
+      position: absolute
+      right: 30px
+      top: 18px
+      background: #F4F4F7
+      color: #6d6d6d
+      font-size: 15px
+      +creg
+      text-transform: uppercase
+
+      .account-icon
+        +s(account-icon)
+        right: 10px
+        margin-left: 5px
+
+      &:hover
+        background: #ededf0
+
+// History block start
+
+// Purple pattern style
+
+.purple-pattern
+  background: url("../img/purple-pattern.png")
+  +box-shadow(0 1px 4px rgba(0,0,0,.15))
+  text-align: center
+
+// Purple pattern end
+
+.history
+  padding: 20px
+  // @extend .row
+
+  > h1
+    background: #636898
+    +border-radius(4px)
+    display: inline-block
+    padding: 5px 25px
+    font-size: 35px
+    color: #ffffff
+    +cbold
+    text-transform: uppercase
+    margin-top: 70px
+    margin-bottom: 90px
+
+  .history__items
+    +clr
+
+    .history__item
+      @extend .col-4
+
+      .img-block
+        min-height: 92px
+
+      h3
+        font-size: 21px
+        text-transform: uppercase
+        +clr
+
+      p
+        font-size: 15px
+        text-transform: uppercase
+        +creg
+
+  .btn_big
+    background: #353967
+    +clight
+    font-size: 17px
+    line-height: 17px
+    text-transform: uppercase
+    color: #ffffff
+    padding: 24px
+    padding-right: 50px
+    position: relative
+    margin-top: 80px
+    margin-bottom: 60px
+
+    strong
+      +cbold
+
+    .white-arrow
+      +s(circle-arrow)
+      margin-left: 5px
+      right: 15px
+      top: 23px
+      position: absolute
+
+    &:hover
+      background: #3f4375
+
+// History block end
+
+// b-title block start
+.b-title
+  display: inline-block
+  text-align: center
+  margin: 75px 0
+
+  h2
+    color: #1d1d1d
+    font-size: 26px
+    +creg
+    text-transform: uppercase
+
+    strong
+      +cbold
+
+  em
+    +clitalic
+    color: #8b8b8b
+    font-size: 16px
+
+    a
+      color: #6e6e6e
+      text-decoration: none
+      border-bottom: 1px dashed #6e6e6e
+      display: inline-block
+      line-height: 16px
+
+  hr
+    border: none
+    background: #CDCDCD
+    height: 1px
+
+// b-title block end
+
+// start benefits
+
+.benefits
+  @extend %in
+
+  .benefits__in
+    background: #fff
+    text-align: center
+    padding: 0 15px
+
+  .benefits__items
+    padding-bottom: 30px
+    +clr
+
+    .benefits__item
+      @extend .col-3
+      min-height: 250px
+
+      h4
+        color: #373737
+        font-size: 18px
+        +cbold
+      p
+        color: #8b8b8b
+        font-size: 16px
+        +creg
+
+      .icon
+        background: url("../img/benefits/icon-bg.jpg") no-repeat
+        width: 60px
+        height: 60px
+        margin-bottom: 13px
+
+        img
+          margin-top: 13px
+
+// end benefits
+
+// freetest start
+
+.freetest
+  text-align: center
+  @extend %in
+
+  .freetest__in
+    background: #232538
+
+    .b-title
+      h2, em
+        color: #ffffff
+
+  .btn_big
+    background: #363A64
+    +clight
+    font-size: 17px
+    line-height: 17px
+    text-transform: uppercase
+    color: #ffffff
+    padding: 24px
+    padding-right: 50px
+    position: relative
+    margin-top: 15px
+    margin-bottom: 105px
+
+    strong
+      +cbold
+
+    .white-arrow
+      +s(circle-arrow)
+      margin-left: 5px
+      right: 15px
+      top: 23px
+      position: absolute
+
+    &:hover
+      background: #3f4375
+
+// freetest end
+
+
+// Plans start
+
+.plans
+  @extend %in
+
+  .plans__in
+    background: #fff
+    text-align: center
+    padding-bottom: 15px
+
+  .plans__items
+    +clr
+    padding: 0 10px
+
+    .plans__item
+      @extend .col-4
+
+      .plans__item-wr
+        background: #F4F4F7
+        +border-radius(4px)
+        padding: 20px 30px
+
+        h4
+          color: #373737
+          font-size: 18px
+          +cbold
+          margin-bottom: 20px
+
+        .plans__row
+          +clr
+          margin-bottom: 10px
+
+          p
+            color: #8b8b8b
+            font-size: 16px
+            +creg
+            float: left
+
+          strong
+            color: #8b8b8b
+            +cbold
+            float: right
+
+        .btn__small
+          background-color: #5A5F8F
+          font-size: 18px
+          color: #ffffff
+          text-transform: uppercase
+          +cbold
+          margin: 15px 0
+
+          &:hover
+            background-color: #7378ab
+
+        .price
+          color: #8b8b8b
+          +citalic
+          font-size: 16px
+          display: block
+
+          span
+            +cbitalic
+
+//  Plans end
+
+
+// Reviews start
+
+.reviews
+  @extend %in
+
+  .reviews__in
+    text-align: center
+    background: #fff
+
+  .reviews__items
+    padding-bottom: 25px
+
+  .reviews__item
+    background: #F4F4F7
+    width: 75%
+    margin: 0 auto
+    padding: 30px
+    +clr
+    +border-radius(4px)
+    position: relative
+
+    &:after
+      border: 20px solid transparent
+      border-bottom: 20px solid #F4F4F7
+      position: absolute
+      top: -32px
+      left: 50%
+      margin-left: -10px
+
+    img
+      +border-radius(50%)
+      float: left
+      margin-right: 30px
+
+    .reviews__descr
+      text-align: left
+
+      p
+        color: #8b8b8b
+        font-size: 16px
+        +citalic
+
+      .author
+        +cbitalic
+        margin-top: 15px
+
+// reviews  end
+
+// Money start
+
+.money
+  @extend %in
+
+  .money__in
+    background: #fff
+    padding: 20px 35px
+    +clr
+
+    >p
+      float: left
+      color: #8b8b8b
+      font-size: 16px
+      +creg
+      margin-right: 20px
+      margin-top: 18px
+
+    .more-link
+      float: right
+      margin-top: 18px
+      color: #6d6d6d
+      font-size: 16px
+      line-height: 1
+      border-bottom: 1px dashed #6d6d6d
+      text-decoration: none
+
+  .money__items
+    float: left
+    +clr
+    width: 74%
+    height: 55px
+    overflow: hidden
+
+    >img
+      float: left
+      margin: 10px
+      position: relative
+
+      &.i2
+        top: 5px
+      &.i4
+        top: 3px
+      &.i5
+        top: 7px
+      &.i6
+        top: 1px
+
+      &.i9
+        top: 3px
+
+      &.i10
+        top: -3px
+
+// Money end
+
+// Footer start
+
+.footer
+  @extend %in
+  margin-bottom: 50px
+
+  .footer__in
+    background: #232538
+    padding: 25px 15px
+
+  .footer__items
+    +clr
+
+  .footer_item
+    @extend .col-3
+
+    h4
+      font-size: 17px
+      margin-bottom: 5px
+
+    ul
+
+      li
+        margin-bottom: 3px
+
+      a
+        text-decoration: none
+        +clight
+        color: #939ca7
+        font-size: 16px
+
+// Footer end
