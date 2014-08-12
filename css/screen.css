@@ -177,3 +177,13 @@ body:after { content: " "; display: table; clear: both; }
 .footer .footer_item h4 { font-size: 17px; margin-bottom: 5px; }
 .footer .footer_item ul li { margin-bottom: 3px; }
 .footer .footer_item ul a { text-decoration: none; font-family: "calibrilight"; font-weight: normal; font-style: normal; color: #939ca7; font-size: 16px; }
+
+.page-title { padding: 25px 0; }
+.page-title h2 { font-family: "calibribold"; font-weight: normal; font-style: normal; font-size: 35px; line-height: 1; text-transform: uppercase; }
+.page-title .breadcrumbs ul { *zoom: 1; display: inline-block; }
+.page-title .breadcrumbs ul:after { content: " "; display: table; clear: both; }
+.page-title .breadcrumbs li { float: left; }
+.page-title .breadcrumbs li a { text-decoration: none; color: #989cc4; font-size: 15px; line-height: 1; font-family: "calibribold"; font-weight: normal; font-style: normal; text-transform: lowercase; }
+.page-title .breadcrumbs li a:after { content: "-"; margin: 0 5px; }
+.page-title .breadcrumbs li:last-child a:after { display: none; }
+.page-title .breadcrumbs li.is-active a { font-family: "calibriregular"; font-weight: normal; font-style: normal; }

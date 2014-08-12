@@ -561,3 +561,44 @@ body
         font-size: 16px
 
 // Footer end
+
+
+// Page title
+
+.page-title
+  padding: 25px 0
+
+  h2
+    +cbold
+    font-size: 35px
+    line-height: 1
+    text-transform: uppercase
+
+  .breadcrumbs
+    ul
+      +clr
+      display: inline-block
+
+    li
+      float: left
+
+      a
+        text-decoration: none
+        color: #989cc4
+        font-size: 15px
+        line-height: 1
+        +cbold
+        text-transform: lowercase
+
+        &:after
+          content: '-'
+          margin: 0 5px
+
+      &:last-child
+        a
+          &:after
+            display: none
+
+      &.is-active
+        a
+          +creg
