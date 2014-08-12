@@ -20,11 +20,29 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/contacts.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contacts.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/screen.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/css\/screen.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/datastorage.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/datastorage.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -181,16 +199,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/img\/icons-s381142d8eb.png": {
+	"\/img\/icons-s7359921460.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1037,
-		"inputAbbreviatedPath": "\/img\/icons-s381142d8eb.png",
-		"outputAbbreviatedPath": "\/img\/icons-s381142d8eb.png",
+		"initialSize": 1115,
+		"inputAbbreviatedPath": "\/img\/icons-s7359921460.png",
+		"outputAbbreviatedPath": "\/img\/icons-s7359921460.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/icons\/account-icon.png": {
 		"fileType": 32768,
@@ -232,6 +250,17 @@
 		"initialSize": 2794,
 		"inputAbbreviatedPath": "\/img\/icons\/lang-arrow.png",
 		"outputAbbreviatedPath": "\/img\/icons\/lang-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/img\/icons\/select-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1038,
+		"inputAbbreviatedPath": "\/img\/icons\/select-icon.png",
+		"outputAbbreviatedPath": "\/img\/icons\/select-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
