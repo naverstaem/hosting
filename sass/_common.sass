@@ -437,39 +437,39 @@ body
   .reviews__items
     padding-bottom: 25px
 
-  .reviews__item
-    background: #F4F4F7
-    width: 75%
-    margin: 0 auto
-    padding: 30px
-    +clr
-    +border-radius(4px)
-    position: relative
+.reviews__item
+  background: #F4F4F7
+  width: 75%
+  margin: 0 auto
+  padding: 30px
+  +clr
+  +border-radius(4px)
+  position: relative
 
-    &:after
-      border: 20px solid transparent
-      border-bottom: 20px solid #F4F4F7
-      position: absolute
-      top: -32px
-      left: 50%
-      margin-left: -10px
+  &:after
+    border: 20px solid transparent
+    border-bottom: 20px solid #F4F4F7
+    position: absolute
+    top: -32px
+    left: 50%
+    margin-left: -10px
 
-    img
-      +border-radius(50%)
-      float: left
-      margin-right: 30px
+  img
+    +border-radius(50%)
+    float: left
+    margin-right: 30px
 
-    .reviews__descr
-      text-align: left
+  .reviews__descr
+    text-align: left
 
-      p
-        color: #8b8b8b
-        font-size: 16px
-        +citalic
+    p
+      color: #8b8b8b
+      font-size: 16px
+      +citalic
 
-      .author
-        +cbitalic
-        margin-top: 15px
+    .author-name
+      +cbitalic
+      margin-top: 15px
 
 // reviews  end
 
@@ -602,3 +602,41 @@ body
       &.is-active
         a
           +creg
+
+
+// Content block styles
+
+.container
+
+  .container__in
+    background: #fff
+    padding: 0 15%
+    padding-top: 80px
+    padding-bottom: 20px
+
+    .reviews__item
+      width: 100%
+      margin-bottom: 80px
+
+  .content
+    color: #000000
+
+    p
+      color: #8b8b8b
+      font-size: 17px
+      +clight
+      margin-bottom: 30px
+
+    h2
+      font-size: 26px
+      line-height: 1
+      margin-bottom: 30px
+      +cbold
+
+      &.l-title
+        span
+          +clight
+
+
+
+

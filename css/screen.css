@@ -148,13 +148,14 @@ body:after { content: " "; display: table; clear: both; }
 
 .reviews .reviews__in { text-align: center; background: white; }
 .reviews .reviews__items { padding-bottom: 25px; }
-.reviews .reviews__item { background: #f4f4f7; width: 75%; margin: 0 auto; padding: 30px; *zoom: 1; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; position: relative; }
-.reviews .reviews__item:after { content: " "; display: table; clear: both; }
-.reviews .reviews__item:after { border: 20px solid transparent; border-bottom: 20px solid #f4f4f7; position: absolute; top: -32px; left: 50%; margin-left: -10px; }
-.reviews .reviews__item img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; float: left; margin-right: 30px; }
-.reviews .reviews__item .reviews__descr { text-align: left; }
-.reviews .reviews__item .reviews__descr p { color: #8b8b8b; font-size: 16px; font-family: "calibriitalic"; font-weight: normal; font-style: normal; }
-.reviews .reviews__item .reviews__descr .author { font-family: "calibribold_italic"; font-weight: normal; font-style: normal; margin-top: 15px; }
+
+.reviews__item { background: #f4f4f7; width: 75%; margin: 0 auto; padding: 30px; *zoom: 1; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; position: relative; }
+.reviews__item:after { content: " "; display: table; clear: both; }
+.reviews__item:after { border: 20px solid transparent; border-bottom: 20px solid #f4f4f7; position: absolute; top: -32px; left: 50%; margin-left: -10px; }
+.reviews__item img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; float: left; margin-right: 30px; }
+.reviews__item .reviews__descr { text-align: left; }
+.reviews__item .reviews__descr p { color: #8b8b8b; font-size: 16px; font-family: "calibriitalic"; font-weight: normal; font-style: normal; }
+.reviews__item .reviews__descr .author-name { font-family: "calibribold_italic"; font-weight: normal; font-style: normal; margin-top: 15px; }
 
 .money .money__in { background: white; padding: 20px 35px; *zoom: 1; }
 .money .money__in:after { content: " "; display: table; clear: both; }
@@ -187,3 +188,10 @@ body:after { content: " "; display: table; clear: both; }
 .page-title .breadcrumbs li a:after { content: "-"; margin: 0 5px; }
 .page-title .breadcrumbs li:last-child a:after { display: none; }
 .page-title .breadcrumbs li.is-active a { font-family: "calibriregular"; font-weight: normal; font-style: normal; }
+
+.container .container__in { background: white; padding: 0 15%; padding-top: 80px; padding-bottom: 20px; }
+.container .container__in .reviews__item { width: 100%; margin-bottom: 80px; }
+.container .content { color: black; }
+.container .content p { color: #8b8b8b; font-size: 17px; font-family: "calibrilight"; font-weight: normal; font-style: normal; margin-bottom: 30px; }
+.container .content h2 { font-size: 26px; line-height: 1; margin-bottom: 30px; font-family: "calibribold"; font-weight: normal; font-style: normal; }
+.container .content h2.l-title span { font-family: "calibrilight"; font-weight: normal; font-style: normal; }
