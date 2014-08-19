@@ -4,6 +4,9 @@
 +font("calibriitalic", "calibrii-webfont")
 +font("calibrilight_italic", "calibrili-webfont")
 +font("calibribold_italic", "calibriz-webfont")
++font("opensans-bold", "opensans-bold")
++font("opensans-bolditalic", "opensans-bolditalic")
++font("opensans-regular", "opensans-regular")
 
 =clight
   font-family: "calibrilight"
@@ -32,6 +35,21 @@
 
 =cbitalic
   font-family: "calibribold_italic"
+  font-weight: normal
+  font-style: normal
+
+=oreg
+  font-family: "opensans-regular"
+  font-weight: normal
+  font-style: normal
+
+=obold
+  font-family: "opensans-bold"
+  font-weight: normal
+  font-style: normal
+
+=oboldit
+  font-family: "opensans-bolditalic"
   font-weight: normal
   font-style: normal
 
@@ -113,10 +131,8 @@ body
 
     .logo
       color: #373737
-      font-family: "Open Sans", sans-serif
       font-size: 22px
-      font-weight: bold
-      font-style: italic
+      +oboldit
       text-transform: uppercase
       text-decoration: none
       margin-top: 5px
@@ -373,13 +389,11 @@ body
 
 // freetest start
 
-.freetest
+.freetest, .blackbg
   text-align: center
   @extend %in
 
-  .freetest__in
-    background: #232538
-
+  .container__in
     .b-title
       h2, em
         color: #ffffff
@@ -630,6 +644,7 @@ body
 
   .breadcrumbs
     margin-top: 5px
+
     ul
       +clr
       display: inline-block
@@ -889,3 +904,621 @@ body
 
     .faq__item
       margin-bottom: 40px
+
+
+  &.domains
+    text-align: center
+    color: #000
+
+    .container__in
+      padding: 0 15%
+      padding-top: 70px
+
+    &.security
+      .container__in
+        padding: 70px 2% 0
+
+    .domains__form
+      background: #F4F4F7
+      +border-radius(3px)
+      padding: 30px
+      text-align: left
+
+      input[type=text]
+        background-color: #fff
+        border: 1px #E5E5EA solid
+        color: #8b8b8b
+        +citalic
+        font-size: 17px
+        padding: 7px 15px 10px
+        width: 77%
+        margin-right: 10px
+
+      .btn__small
+        background-color: #5A5F8F
+        font-size: 18px
+        color: #ffffff
+        text-transform: uppercase
+        +cbold
+        padding: 9px 5px
+        width: 20%
+
+        &:hover
+          background-color: #7378ab
+
+      .checkbox
+        color: #8b8b8b
+        font-size: 16px
+        +clight
+        margin-top: 10px
+
+        input[type=checkbox]
+          outline: none
+          border: none
+          display: none !important
+          +appearance(none)
+          background: transparent
+
+          + label
+            .icon
+              text-align: center
+              margin-right: 5px
+              +s(checkbox)
+              float: left
+
+              i
+                position: relative
+                top: -2px
+
+          &:checked
+            + label
+              .icon
+                i
+                  +s(checked)
+                  display: inline-block
+
+
+    .domains__info
+      .domains__header
+        margin: 60px 0 45px
+
+        .domain
+          font-size: 26px
+          color: #1d1d1d
+          +clight
+
+          span
+            +cbold
+            text-transform: uppercase
+
+            &.free
+              color: #7fc153
+
+        em
+          color: #8b8b8b
+          font-size: 16px
+          line-height: 1
+          +clitalic
+
+      .domains__other
+        .domains__item
+          @extend .col-4
+          text-align: left
+          font-size: 14px
+          color: #737373
+          +oreg
+          margin-bottom: 10px
+
+          strong
+            +obold
+
+          .price
+            color: #1d1d1d
+
+          .icon
+            +s(checkbox)
+            float: left
+            margin-right: 7px
+            text-align: center
+
+          &.free
+            .icon
+              i
+                display: inline-block
+                +s(d-i-free)
+
+          &.busy
+            .icon
+              i
+                display: inline-block
+                +s(d-i-busy)
+
+      .btn_big
+        background: #353967
+        +clight
+        font-size: 17px
+        line-height: 17px
+        text-transform: uppercase
+        color: #ffffff
+        padding: 24px
+        padding-right: 50px
+        position: relative
+        margin-top: 80px
+        margin-bottom: 60px
+
+        strong
+          +cbold
+
+        .white-arrow
+          +s(circle-arrow)
+          margin-left: 5px
+          right: 15px
+          top: 23px
+          position: absolute
+
+        &:hover
+          background: #3f4375
+
+    .security__items
+      padding-bottom: 80px
+      +clr
+
+      .security__item
+        @extend .col-4
+
+        .security__wr
+          background: #F4F4F7
+          +border-radius(4px)
+          padding: 30px
+
+          h3
+            color: #373737
+            font-size: 18px
+            line-height: 1
+            margin-bottom: 25px
+            +cbold
+
+          select
+            background-color: #fff
+            border: 1px #E5E5EA solid
+            width: 100%
+            color: #8b8b8b
+            +citalic
+            font-size: 17px
+            padding: 7px 15px 10px
+            margin-bottom: 15px
+            +border-radius(0)
+            +appearance(none)
+            position: relative
+            background-image: url(../img/icons/select-icon.png)
+            background-repeat: no-repeat
+            background-position: 96% 16px
+            
+          ul
+            text-align: left
+
+            li
+              color: #8b8b8b
+              font-size: 16px
+              +creg
+              margin-bottom: 5px
+
+          .btn_small
+            background-color: #5A5F8F
+            font-size: 18px
+            color: #ffffff
+            text-transform: uppercase
+            +cbold
+            margin: 25px 0
+
+            &:hover
+              background-color: #7378ab
+
+          .price
+            color: #8b8b8b
+            +citalic
+            font-size: 16px
+            display: block
+
+            span
+              +cbitalic
+
+  &.licenses
+    .container__in
+      @extend %in
+      padding: 0 2%
+      text-align: center
+      padding-top: 60px
+
+    .licenses__items
+      +clr
+
+      .licenses__item
+        @extend .col-4
+        margin-bottom: 25px
+
+        .licenses__wr
+          background: #F4F4F7
+          +border-radius(4px)
+          padding: 30px
+
+          h3
+            color: #373737
+            font-size: 18px
+            line-height: 1
+            margin-bottom: 25px
+            +cbold
+
+          select
+            background-color: #fff
+            border: 1px #E5E5EA solid
+            width: 100%
+            color: #8b8b8b
+            +citalic
+            font-size: 17px
+            padding: 7px 15px 10px
+            margin-bottom: 15px
+            +border-radius(0)
+            +appearance(none)
+            position: relative
+            background-image: url(../img/icons/select-icon.png)
+            background-repeat: no-repeat
+            background-position: 96% 16px
+
+          p
+            text-align: left
+            color: #8b8b8b
+            +creg
+            font-size: 16px
+            line-height: 35px
+
+          .btn_small
+            background-color: #5A5F8F
+            font-size: 18px
+            color: #ffffff
+            text-transform: uppercase
+            +cbold
+            margin: 25px 0
+
+            &:hover
+              background-color: #7378ab
+
+          .price
+            color: #8b8b8b
+            +citalic
+            font-size: 16px
+            display: block
+
+            span
+              +cbitalic
+
+.news
+  .news__items
+    .news__item
+      margin-bottom: 35px
+
+      h3
+        font-size: 18px
+        color: #373737
+        +cbold
+
+      .data
+        +clitalic
+        font-size: 14px
+        color: #8b8b8b
+
+      .descr
+        p
+          font-size: 17px
+          color: #8b8b8b
+          +creg
+
+
+  .news__nav
+    +clr
+    margin-top: 60px
+    margin-bottom: 80px
+
+    .next
+      float: right
+      background: #F4F4F7
+
+      &.btn
+        .icon
+          +s(gray-arrow)
+          margin-left: 5px
+          position: relative
+          top: 3px
+
+
+        span
+          color: #8b8b8b
+          font-size: 17px
+          line-height: 1
+          +creg
+          position: relative
+          top: -3px
+
+
+
+
+.order
+  color: #000000
+  
+  .container__in
+    padding: 80px 13% 20px
+
+  h2.title
+    color: #1d1d1d
+    font-size: 26px
+    +creg
+    text-transform: uppercase
+
+    strong
+      +cbold
+
+  .step__items
+    margin-bottom: 30px
+    +clr
+    
+    .step__item
+      border: 1px #F4F4F7 solid
+      text-align: center
+      position: relative
+      border-left: none !important
+
+      &:first-child
+        +border-left-radius(3px)
+
+      &:last-child
+        +border-right-radius(3px)
+        border-left: 1px #F4F4F7 solid !important
+
+      a
+        color: #8b8b8b
+        font-size: 18px
+        +creg
+        text-decoration: none
+        padding: 12px 15px
+        display: inline-block
+        width: 100%
+
+      &.is-active
+        background: #F4F4F7
+
+        &:after
+          content: ''
+          display: inline-block
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 13px 12.5px 0 12.5px
+          border-color: #f4f4f7 transparent transparent transparent
+          position: absolute
+          bottom: -13px
+          left: 50%
+          margin-left: -12.5px
+
+        a
+          color: #373737
+          +cbold
+          font-size: 18px
+
+  .order__items
+    margin-top: 30px
+    margin-bottom: 15px
+    +clr
+
+    .order__item
+      border-bottom: 1px #F4F4F7 dashed
+      margin-bottom: 5px
+      padding-bottom: 5px
+      margin-left: 0
+      margin-right: 0
+
+      .icon-remove
+        +s(remove-icon)
+        float: right
+        margin-top: 3px
+      
+      p
+        @extend .col-4
+        color: #8b8b8b
+        font-size: 16px
+        +creg
+        padding: 0
+        padding-right: 15px
+
+      &.title
+        border-bottom: none
+        
+        p
+          color: #373737
+          font-size: 16px
+          +clitalic
+          
+      &:last-child
+        border-bottom: none
+
+  .sum
+    margin: 20px 0
+
+    p
+      color: #1d1d1d
+      font-size: 18px
+      +creg
+
+      strong
+        +cbold
+
+  .required_settings, .more_settings
+    margin-top: 20px
+    @extend .col-6
+
+    .title
+      margin-bottom: 30px
+
+    select
+      background-color: #fff
+      border: 1px #E5E5EA solid
+      width: 93%
+      color: #8b8b8b
+      +citalic
+      font-size: 17px
+      padding: 7px 15px 10px
+      margin-bottom: 20px
+      +border-radius(2px)
+      +appearance(none)
+      position: relative
+      background-image: url(../img/icons/select-icon.png)
+      background-repeat: no-repeat
+      background-position: 96% 16px
+
+
+  .email__block
+    background: #F4F4F7
+    +border-radius(3px)
+    padding: 15px 30px 30px
+    text-align: left
+    margin: 50px 0
+
+    h3
+      color: #1d1d1d
+      font-size: 18px
+      +cbold
+      margin-bottom: 10px
+
+
+    input[type=text]
+      background-color: #fff
+      border: 1px #E5E5EA solid
+      color: #8b8b8b
+      +citalic
+      font-size: 17px
+      padding: 7px 15px 10px
+      width: 77%
+      margin-right: 10px
+
+    .btn__small
+      background-color: #5A5F8F
+      font-size: 18px
+      color: #ffffff
+      text-transform: uppercase
+      +cbold
+      padding: 9px 5px
+      width: 20%
+
+      &:hover
+        background-color: #7378ab
+
+    .checkbox
+      color: #8b8b8b
+      font-size: 16px
+      +clight
+      margin-top: 10px
+
+      input[type=checkbox]
+        outline: none
+        border: none
+        display: none !important
+        +appearance(none)
+        background: transparent
+
+        + label
+          .icon
+            text-align: center
+            margin-right: 5px
+            +s(checkbox)
+            float: left
+
+            i
+              position: relative
+              top: -2px
+
+        &:checked
+          + label
+            .icon
+              i
+                +s(checked)
+                display: inline-block
+
+
+
+
+.input-group
+  input
+    border: 1px #E5E5EA solid
+    +border-left-radius(3px)
+    color: #8b8b8b
+    font-size: 16px
+    padding: 10px 15px
+    +creg
+    float: left
+
+    +placeholder
+      color: #8b8b8b
+
+  .input-group__addon
+    background: #e5e5ea
+    cursor: pointer
+    padding: 10px 15px
+    height: 41px
+    display: inline-block
+    +border-right-radius(3px)
+
+    .input-arrow-icon
+      +s(input-arrow)
+
+  &.plus-minus
+    position: relative
+
+    .text
+      position: absolute
+      top: 10px
+      left: 20px
+      color: #8b8b8b
+      font-size: 17px
+      +clitalic
+
+    .price
+      position: absolute
+      color: #b4b4b4
+      font-size: 17px
+      +clitalic
+      left: 65%
+      top: 10px
+
+    input
+      padding-left: 185px
+      padding-right: 45px
+      width: 74.5%
+      color: #8b8b8b
+      font-size: 17px
+      +clitalic
+
+    .input-group__addon
+      padding: 0
+      height: 43px
+
+      button
+        background-color: transparent
+        padding: 10px
+        height: 41px
+        
+        &:first-child
+          border-right: 1px #F2F2F5 solid
+          padding: 10px 15px
+
+        &:last-child
+          padding-right: 15px
+
+    .plus-icon
+      +s(plus-icon)
+      position: relative
+      top: 1px
+
+    .minus-icon
+      position: relative
+      top: -2px
+      +s(minus-icon)
+
