@@ -69,47 +69,42 @@
             <div class="step__item col-4">
                 <a href="">1. Оформление заказа</a>
             </div>
-            <div class="step__item col-4">
+            <div class="step__item col-4 is-active">
                 <a href="">2. Оплата</a>
             </div>
-            <div class="step__item col-4 is-active">
+            <div class="step__item col-4">
                 <a href="">3. Завершение заказа</a>
             </div>
         </div>
 
-        <div class="order__tnx">
-            <h2 class="title"><strong>СПАСИБО</strong> ЗА ВАШ ЗАКАЗ!</h2>
-            <p>Оплата <strong>успешно</strong> произведена. Для завершения оформления заказа Вам необходимо заполнить личную информацию
-                (все поля обязательны для заполнения):</p>
-        </div>
+        <div class="order__info">
 
-        <div class="order__form row">
-            <form action="" method="post">
-                
-                <div class="col-6">
-                    <input type="text" placeholder="ФИО"/>
-                    <input type="text" placeholder="Телефон"/>
-                    <input type="text" placeholder="Дата рождения"/>
-                    <input type="text" placeholder="Серия паспорта"/>
-                    <input type="text" placeholder="Номер паспорта"/>
-                    <input type="text" placeholder="Кем выдан"/>
-                </div>
+            <div class="email__block">
+                <form action="#" method="post">
+                    <h3>Выберите удобный способ оплаты:</h3>
 
-                <div class="col-6">
-                    <select name="country">
-                        <option value="">Страна</option>
-                        <option value="">Россия</option>
-                    </select>
+                    <div class="pay-select">
+                        <select name="pay-type">
+                            <option value="visa">Кредитная карта Visa</option>
+                            <option value="mastercard">Кредитная карта MasterCard</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
 
-                    <input type="text" placeholder="Город"/>
-                    <input type="text" placeholder="Индекс"/>
-                    <input type="text" placeholder="Улица"/>
-                    <input type="text" placeholder="Дом"/>
-                    <input type="text" placeholder="Квартира"/>
-                </div>
 
-                <button type="submit" class="btn btn__small">СОХРАНИТЬ ЛИЧНЫЕ ДАННЫЕ</button>
-            </form>
+                    <button type="submit" class="btn btn__small">ПРОВЕРИТЬ</button>
+
+                    <a href="">вернуться назад</a>
+
+                </form>
+            </div>
+
+
+            <div class="b-title center">
+                <h2><strong>НЕ НАШЛИ</strong> ПОДХОДЯЩИЙ СПОСОБ ОПЛАТЫ?</h2>
+                <hr/>
+                <em><a href="">свяжитесь</a> с нашим менеджером для уточнения возможности оплаты другим способом</em>
+            </div>
         </div>
     </div>
 </div>
