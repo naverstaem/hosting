@@ -66,10 +66,10 @@
 <div class="container order">
     <div class="container__in">
         <div class="step__items">
-            <div class="step__item col-4 is-active">
+            <div class="step__item col-4">
                 <a href="">1. Оформление заказа</a>
             </div>
-            <div class="step__item col-4">
+            <div class="step__item col-4 is-active">
                 <a href="">2. Оплата</a>
             </div>
             <div class="step__item col-4">
@@ -78,58 +78,32 @@
         </div>
 
         <div class="order__info">
-            <h2 class="title">ПОДРОБНОСТИ <strong>ЗАКАЗА</strong></h2>
-
-            <div class="order__items">
-                    <div class="order__item row title">
-                        <p>услуга</p>
-                        <p>период</p>
-                        <p>стоимость</p>
-                    </div>
-                    <div class="order__item row">
-                            <p>Регистрация домена inferno.name</p>
-                            <p>1 год</p>
-                            <p>$14
-                                <a href="" class="icon icon-remove" href=""></a>
-                            </p>
-                    </div>
-                    <div class="order__item row">
-                            <p>Аренда VPS CA-1</p>
-                            <p>6 месяцев</p>
-                            <p>$93.50
-                                <a href="" class="icon icon-remove" href=""></a>
-                            </p>
-                    </div>
-            </div>
-
-            <div class="input-group">
-
-                <input type="text" name="" placeholder="Промо-код" id="i1">
-
-                <label for="i1" class="input-group__addon">
-                    <i class="icon input-arrow-icon"></i>
-                </label>
-
-            </div>
-
-            <div class="sum">
-                <p>Сумма заказа: <strong>$107,50</strong></p>
-            </div>
-
 
             <div class="email__block">
                 <form action="#" method="post">
-                    <h3>Введите Ваш e-mail для управления Вашим заказом:</h3>
+                    <h3>Выберите удобный способ оплаты:</h3>
 
-                    <input type="text" placeholder="Введите имя домена"/>
-                    <button type="submit" class="btn btn__small">ПРОВЕРИТЬ</button>
-
-                    <div class="checkbox">
-                        <input type="checkbox" name="" id="check"/>
-                        <label for="check"><i class="icon"><i class="check"></i></i><span>Проверить во всех доменных зонах</span></label>
+                    <div class="pay-select">
+                        <select name="pay-type">
+                            <option value="visa">Кредитная карта Visa</option>
+                            <option value="mastercard">Кредитная карта MasterCard</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
                     </div>
 
+
+                    <button type="submit" class="btn btn__small">ПРОВЕРИТЬ</button>
+
+                    <a href="">вернуться назад</a>
+
                 </form>
+            </div>
+
+
+            <div class="b-title center">
+                <h2><strong>НЕ НАШЛИ</strong> ПОДХОДЯЩИЙ СПОСОБ ОПЛАТЫ?</h2>
+                <hr/>
+                <em><a href="">свяжитесь</a> с нашим менеджером для уточнения возможности оплаты другим способом</em>
             </div>
         </div>
     </div>

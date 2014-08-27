@@ -1,0 +1,1 @@
+head.ready(function(){function e(){var e=$(".pay-select select").val();$(".pay-select select").parents(".pay-select").removeClass().addClass("pay-select "+e)}e(),$(document).change(function(){e()}),$(".lightbox").fancybox({padding:0}),$(".inline-small-select a").click(function(){event.preventDefault()}),$(".inline-small-select .is-active").click(function(){})});
